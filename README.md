@@ -16,4 +16,4 @@ HTML, CSS, JavaScript
 
 ## Live Portfolio
 
-Coming soon.
+https://manasamummadi0208.github.io/manasa-portfolio/
