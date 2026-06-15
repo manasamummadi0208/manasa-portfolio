@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Manasa Mummadi — Software Engineer portfolio" />
+  <title>Manasa Mummadi | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+  <a class="brand" href="home.html">🌿 Manasa Mummadi</a>
+  <div class="nav-links">
+    <a href="index.html">Start</a>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a>
+    <a href="skills.html">Skills</a>
+    <a href="interests.html">Interests</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+  <main class="page interests-page">
+    <section class="section-heading">
+      <p class="kicker">INTERESTS</p>
+      <h1>Creative and Technical Interests</h1>
+      <p>Click a chip to open a one-line note.</p>
+    </section>
+
+    <section class="interest-shell card">
+      <div class="interest-chips">
+        <button data-title="Backend Engineering" data-desc="I like building the logic, APIs, and systems that quietly keep products reliable.">Backend Engineering</button>
+        <button data-title="Frontend / iOS App Development" data-desc="I enjoy polished interfaces that feel clean, intuitive, and personal.">Frontend / iOS App Development</button>
+        <button data-title="Web Development" data-desc="I like turning ideas into interactive pages that people can actually use.">Web Development</button>
+        <button data-title="Data Analysis" data-desc="I enjoy finding patterns, asking better questions, and making data easier to understand.">Data Analysis</button>
+        <button data-title="Cloud Computing" data-desc="I’m interested in scalable systems, deployment, and reliable cloud-backed services.">Cloud Computing</button>
+        <button data-title="Language Learning" data-desc="Learning languages helps me stay curious, patient, and open to new ways of thinking.">Language Learning</button>
+        <button data-title="Distributed Systems" data-desc="I like the challenge of coordinating systems that must stay reliable under scale and failure.">Distributed Systems</button>
+        <button data-title="LeetCode Daily Challenge" data-desc="Here’s your turn to start if you aren’t already! 🌱">LeetCode Daily Challenge</button>
+        <button data-title="Fitness" data-desc="Movement keeps me disciplined, focused, and grounded outside the laptop.">Fitness</button>
+        <button data-title="Travel" data-desc="I love seeing new places, especially calm cities, green landscapes, and soft morning light.">Travel</button>
+        <button data-title="Reading" data-desc="Reading gives me quiet space to slow down and think deeply.">Reading</button>
+        <button data-title="Sketching" data-desc="Sketching helps me notice shapes, details, and composition.">Sketching</button>
+        <button data-title="Editing" data-desc="Editing is where my aesthetic side comes out through pacing, color, and tiny details.">Editing</button>
+        <button data-title="Photography" data-desc="Photography helps me capture soft light, nature, and moments that feel cinematic.">Photography</button>
+      </div>
+    </section>
+
+    <section class="leetcode-card card">
+      <div>
+        <p class="kicker">LEETCODE</p>
+        <h2>Daily Challenge Energy</h2>
+        <p>Here’s your turn to start if you aren’t already! 🌱</p>
+        <a class="btn primary" href="https://leetcode.com/problemset/" target="_blank" rel="noopener">Start Daily Challenge</a>
+      </div>
+      <img src="assets/leetcode_profile.png" alt="LeetCode badges and activity heatmap" />
+    </section>
+
+    <section class="interest-gallery">
+      <img src="assets/fitness_sunset.png" alt="Meditating near sunset by the water" />
+      <img src="assets/paris_travel.png" alt="Paris cafe with croissant and Eiffel Tower" />
+      <img src="assets/reading_park.png" alt="Reading in the park with strawberries" />
+      <img src="assets/photography_nature.png" alt="Taking a photo outdoors" />
+      <img src="assets/editing_ipad.png" alt="Editing a video on an iPad" />
+    </section>
+  </main>
+
+  <div id="interestModal" class="modal hidden">
+    <div class="modal-card">
+      <p class="kicker">INTEREST DETAILS</p>
+      <h2 id="modalTitle">Interest</h2>
+      <p id="modalDesc">Description</p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <script src="interests.js"></script>
+</body>
+</html>
